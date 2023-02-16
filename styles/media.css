@@ -1,0 +1,19 @@
+.page-media-main {
+    position: relative;
+    background-image: url("../images/ft8.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.vibe {
+    font-family: "Mountains of Christmas", sans-serif;
+    text-shadow: 0 0 10px deepskyblue;
+    font-size: 3rem;
+    color: deepskyblue;
+}
+
+.page-media-main .button {
+    background-image: linear-gradient(to top, #6CCAFE 0%, #318ec6 100%, #318ec6 100%, #318ec6 100%);
+}
+

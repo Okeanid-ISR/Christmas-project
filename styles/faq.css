@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
+
+.center {
+    border-radius: 5px;
+    width: 900px;
+    border: 10px solid #59BBC6;
+    margin: auto;
+}
+
+section a {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    overflow: hidden;
+    border-bottom: 3px solid #aaa69d;
+}
+
+section p {
+    padding: 10px;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    background: #27ae60;
+    color: #fff;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+section:target p {
+    height: 10em;
+    opacity: 1;
+    padding: 20px;
+}
+
+.page-faq-main {
+    position: relative;
+    background-image: url("../images/ft2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 991px) {
+    .center {
+        width: 90%;
+        height: 100%;
+    }
+
+    section:target p {
+        height: 18.5em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-nav {
+        display: none;
+        position: fixed;
+        top: -290px;
+        left: 0;
+        width: 100%;
+        background: var(--header-gray);
+        min-height: 100vh;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    a.button {
+        margin-top: 1px;
+        margin-left: 0px;
+        width: 90%;
+        display: flex;
+    }
+
+    nav#menu {
+        margin-top: 0px;
+    }
+
+    .bg {
+        margin-top: 15px;
+        width: 90%;
+        display: flex;
+        border-bottom: 1px solid gray;
+    }
+
+    .header-main__logo img {
+        height: 75px;
+    }
+
+    a.button {
+        margin-top: 9px;
+        margin-left: 0px;
+        width: 90%;
+        display: flex;
+
+    }
+
+    .header-menu__hidden-button {
+        transition: 450ms;
+    }
+
+    button#header-button {
+        transform: scale(1.1);
+        background: cornflowerblue;
+        border-radius: 3px;
+        padding: 3px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .header-nav {
+        display: flex !important;
+    }
+
+
+    .button-wrapper {
+        display: none;
+    }
+}

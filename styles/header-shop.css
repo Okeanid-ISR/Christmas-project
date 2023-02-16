@@ -1,0 +1,24 @@
+.header-search {
+    border: 2px solid white;
+    border-radius: 6px;
+
+}
+
+.header-search-left__info {
+    height: 35px;
+    width: 100%;
+    padding-left: 10px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    text-align: left;
+    border-style: none;
+    outline: none;
+}
+
+.header-search {
+    height: 100px;
+    background-image: var(--background-color);
+
+}
+
+
