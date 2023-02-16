@@ -1,0 +1,86 @@
+:root {
+    --theme-col: #FF3314;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.wishes {
+    font-family: "Mountains of Christmas", sans-serif;
+    position: relative;
+    height: 700px;
+    border-radius: 10px;
+    background-image: url("../images/try17.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+
+.f-item-con {
+    padding: 1.5rem 4rem;
+}
+
+.wisher .app-name {
+    color: white;
+
+    padding-left: 1.5rem;
+    font-size: 3rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    font-family: "Mountains of Christmas", sans-serif;
+
+}
+
+.wishes-title {
+    font-family: "Mountains of Christmas", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    line-height: 5rem;
+    color: white;
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+
+.g-i-t {
+    height: 600px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.g-i-t form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+button.f-btn {
+    background: green;
+}
+
+form .g-inp {
+    padding: .25rem .5rem;
+    font-size: 16px;
+    background: snow;
+    border: 1px solid green;
+    box-shadow: 0px 0px 0px 5px white, inset 0px 10px 27px -8px white, inset 0px -10px 27px -8px white, 5px 5px 15px 5px rgb(0 0 0 / 0%);}
+
+.g-inp textarea {
+    height: 150px;
+}
+
+.f-btn {
+    padding: .25rem 1rem;
+    background-color: var(--theme-col);
+    border-radius: .25rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
