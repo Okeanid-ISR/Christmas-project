@@ -1,0 +1,596 @@
+.container-santa {
+    height: 300px;
+    width: 350px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: -200px;
+    left: 79%;
+}
+
+.container-santa svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.plane {
+    position: relative;
+    -webkit-animation: float 3s infinite;
+    animation: float 3s infinite;
+}
+
+@-webkit-keyframes float {
+    50% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+    }
+}
+
+@keyframes float {
+    50% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+    }
+}
+
+.hand {
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -webkit-animation: wave 1.5s infinite;
+    animation: wave 1.5s infinite;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+
+#santa {
+    position: absolute;
+    width: 30%;
+    top: 7%;
+    right: 0%;
+    z-index: 1000;
+}
+
+#mouth {
+    animation: HoHoHoMouth 6s infinite 6s;
+    -webkit-animation: HoHoHoMouth 6s infinite 6s;
+    opacity: 0;
+}
+
+#hohoho1 {
+    animation: HoHoHoText1 6s infinite 6s;
+    -webkit-animation: HoHoHoText1 6s infinite 6s;
+    fill: white;
+
+
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+}
+
+#hohoho2 {
+    animation: HoHoHoText2 6s infinite 6s;
+    -wbkit-animation: HoHoHotext2 6s infinite 6s;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0;
+    fill: red;
+}
+
+#hohoho3 {
+    animation: HoHoHoText3 6s infinite 6s;
+    -webkit-animation: HoHoHoText3 6s infinite 6s;
+    font-size: 35px;
+    font-weight: 700;
+    opacity: 0;
+    fill: green;
+}
+
+@-webkit-keyframes HoHoHoText1 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes HoHoHoText2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes HoHoHoText3 {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes HoHoHoMouth {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes HoHoHoText1 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes HoHoHoText2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes HoHoHoText3 {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes HoHoHoMouth {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+
+#Santa_Container {
+    position: absolute;
+    margin-right: -35%
+}
+
+#Santa_Slide_Panel {
+    position: absolute;
+    width: 75%;
+    height: 50%;
+    overflow: hidden;
+    margin-left: -57%;
+    -webkit-transition: all 3s ease;
+    transition: all 1000ms ease;
+    cursor: pointer
+}
+
+#Santa_Slide_Panel:hover {
+    margin-left: 0%;
+}
+
+#Santa_Greeting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 28.75%;
+    z-index: 100;
+    /* Brick Tiled Background */
+    background-color: silver;
+    background-image: linear-gradient(335deg, #b00 23px, transparent 23px), linear-gradient(155deg, #d00 23px, transparent 23px), linear-gradient(335deg, #b00 23px, transparent 23px), linear-gradient(155deg, #d00 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+#Santa_Message {
+    position: absolute;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; /* Accelerates Overflow Scrolling on IOS */
+
+    padding: 15px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+    width: 60%;
+
+
+    box-shadow: 0 0 0 15px #587A55, 0 0 0 17px #587A55, 0 0 0 19px ghostwhite, 0 0 0 26px #1E340E, 0 0 0 40px #1E340E;
+    background: ghostwhite;
+
+}
+
+#Santa_Message p {
+    font-family: 'Linden Hill', serif;
+    font-size: 110%;
+    color: #587A55;
+}
+
+/* ANIMATIONS */
+
+.UpDown_1 {
+    animation: bottom_animation 6s infinite;
+    -webkit-animation: bottom_animation 6s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.eyesandbrow {
+    animation: bottom_animation 6s infinite;
+    -webkit-animation: bottom_animation 6s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.shizzle-animated {
+    visibility: visible !important;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+.Santa_Climbing_Chimney {
+    -webkit-animation-name: Santa_Climbing_Chimney;
+    animation-name: Santa_Climbing_Chimney;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes Santa_Climbing_Chimney {
+    0% {
+        -webkit-transform: translateY(200%);
+    }
+    50% {
+        opacity: 0.7;
+        -webkit-transform: translateY(100%) rotate(-7deg);
+    }
+    75% {
+        -webkit-transform: translateY(50%) rotate(7deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0) rotate(0deg);
+    }
+}
+
+@keyframes Santa_Climbing_Chimney {
+    0% {
+        transform: translateY(200%);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(100%) rotate(-7deg);
+    }
+    75% {
+        transform: translateY(50%) rotate(7deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.slideScaleUpIn {
+    -webkit-animation-delay: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: slideScaleUpIn;
+    animation-name: slideScaleUpIn;
+}
+
+@-webkit-keyframes slideScaleUpIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px) scale(.1);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: scale(.8);
+    }
+}
+
+@keyframes slideScaleUpIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px) scale(.1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(.8);
+    }
+}
+
+
+@keyframes bottom_animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes bottom_animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* SVG DEFAULT STYLING FROM ILLUSTRATOR */
+.santa-0 {
+    fill: #C10E0E;
+}
+
+.santa-1 {
+    fill: #F4C7B3;
+}
+
+.santa-2 {
+    opacity: 0.2;
+}
+
+.cheeks {
+    fill: #EAB5A0;
+}
+
+.santa-4 {
+    fill: #F2F2F2;
+    stroke: #E6E6E6;
+    stroke-width: 1.8489;
+    stroke-miterlimit: 10;
+}
+
+.santa-5 {
+    fill: none;
+}
+
+.santa-6 {
+    fill: #F2F2F2;
+}
+
+.santa-7 {
+    fill: #E6E6E6;
+}
+
+.santa-white {
+    fill: #FFFFFF;
+}
+
+.nose {
+    fill: #EAB5A0;
+}
+
+.santa-11 {
+    fill: #5E5958;
+}
+
+.eyeball {
+    fill: #F9F5F4;
+}
+
+.santa-13 {
+    fill: #D60B0B;
+}
+
+.santa-14 {
+    fill: #BC0202;
+}
+
+.santa-15 {
+    fill: #C6C6C6;
+}
+
+.santa-16 {
+    fill: none;
+    stroke: #F2F2F2;
+    stroke-width: 16.7815;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.santa-17 {
+    fill: #C40808;
+}
+
+.santa-18 {
+    opacity: 0.15;
+}
+
+.santa-19 {
+    fill: #B50808;
+}
+
+.santa-20 {
+    fill: none;
+    stroke: #F2F2F2;
+    stroke-width: 17.3975;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.hat-strip {
+    right: 0;
+    position: absolute;
+}
+
+/* WebKit Scrollbar Styling */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: -10%;
+    background-color: rgba(0, 62, 9, 1.00);
+}
+
+
+/* Page Stuff */
+
+
+.button {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 50px;
+    padding: 10px 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 1.4rem;
+    margin-left: 30px;
+    line-height: 26px;
+    background-image: linear-gradient(to top, #204CB0FF 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0 0 10px #FFFFFF;
+    outline: none;
+    border-radius: 15px;
+    position: relative;
+    overflow: visible; /* IE9 & 10 */
+    /* -webkit-transition: 350ms linear; */
+    -moz-transition: 350ms linear;
+    -o-transition: 350ms linear;
+    transition: 350ms;
+}
+
+.button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -3px;
+    right: 0;
+    height: 23px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAXCAYAAACS5bYWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABFpJREFUeNrUV0tIo1cUvpkYjQ4xxSA6DxuNqG0dtaUKOgs3s6i0dFd3pSsXdjeIixakiGA34sZuXCkoONLFwJTK4GMYLYXg29gatTpiXurkbd7vv9/5ub+IxuhA7eiFQ5Kbc8/57ne/e87/ywRBYLdl3GG3aNwqsLJ0k0tLS+fmcnNzWUVFBVMoFGx2djarvLxcm5OTw+bm5iytra2xc4ExNjY27iqVyvvwK6CpeDzuCYVC1urq6qDA9UcfPp+PHR4esmAwKK6tr68/l5/8rgQ2Ozub1dbWyiYmJooaGxt/VqvV38jlchX9l0qlwoFA4DWS/RKLxRxFRUVf5+XlPcaaT2AP0sVPJBL2SCRiAPBpu93+vKamZo/Ae71eZjabWV1dXVqw7CKwp43ksrCw8Bhg7MJ/PLDZ5PHx8cz29vYT5JGD/bSYLgTrcDgYdk6siSc6NjZWDaAe4ZoHQL+cmZnRpZPnhWDpD8kw7uKo9ML/NMCsd2tr61vkzboMrEyv138M7TyLRqMWMBsX3sMgaZhMpp+AR5EJrCocDpuEGzKg4x8khs+CVWxubvZfR9JkMik4nU7BarUKLpeLmLsKuwIqTLynp4fqmIzASrqQT09Pf1VVVfX0KsWZ6uHBwQHTaDSsoKAgo6/H4xHLEcrVyRwuEisrKzs5XrrIVAVwiUVDKRRrL+YI32ewdVhMApuHWvcj6vids6J2u90MF4yBHUZNgKoEBaRBQalJqFSqtJfUYrGIlQX+ydXVVTN+u0tKSjQNDQ1axJVl2iTypebn55d7e3v/kqoDgZU1NTU9LCws/Py0M+2ekuGincxJ3yF+18jIyHJLS0slQJUWFxczrBeBE0vE5tHRkbixlZWVfSR8gTX/0P5gH7S1tX3Z3t7+BW8qAvwSfr8/jA0EIRM/qoFtampqbW9vTw+XA+ojUruVd3Z2tvb19T2TQFEim81GgVJoCvvj4+NLOJZgaWmpemdn5y3a6BbcnJDAw8HBwac6ne6eqCW5XDwB3qVSqM9/DAwMUNy/eVLabT7sI25qwgujThCBhWE+mAt2yNc4SQKSZrOQQE1HS22VJkmPAGTr7+//fX19fRk+Zgq0trbGeFAKEAQT98BSqKOj47vm5uaa/Px8JeIk4GcaHh6eWlxcfAU/A8xG67BxAX3fwdcbYUpSDJ06Z49Ak8ZC3OL8f3YiA4PBYKdLQ2AJ9OTk5GpXV9cQiCVh79M94QtlPLDUE/1gPNrd3f0W33W4cBoco48zQuy/IZYAMnGqlSc4c66L9JruQUaSARXeT8HGKzxAqFBekni6+h46+pMzGiJGMgTOJh1yU/KNEGDvZWvfBawkA9ppwGg0mrRa7SOI2g+gxOgbJIpdFpj72PnxSnPX8vqRxTURgBQWKisrH+GThOm+CtAzoK/9/Uiqq/6hoaHfdnd3jaOjo7/yY7yxbwqkWy3sQzpS2C6YirwvUJk0y7hurfyGRrnduPGvAAMASmo8wzeVwfsAAAAASUVORK5CYII=) no-repeat 0 0,
+    url(data:image/png;base64,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) no-repeat 50% 0,
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAXCAYAAACFxybfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAodJREFUeNrsVb1rWlEUv2pN/GqspKRSKFYXWzEloIWif0Fn6dJChQ7OQil0qd3EzcEpg0OgdHDr4CQODk7VRlLMEIVqApX4We0zflR9/Z1Ui4T34ksaaAYP/Hzc673n/M6550PG8zz73yKjn0wm83fDYDAwo9HINBrNnwOQg4MDs0ql2lQqlfdAWont7ng8Pjw+Ps44nc4G1pI9EXWaSOzt7TGO42aH5Pv7+08ajUZ0MBiUeXEZd7vdL5VK5fX29rZ+5tQiEmdxKrlcjsEYczgcynK5/BKKv/IXFNz/XiqVXkHdjUuRIA9SqdRD8or/R8Ez9fr9fqHVakUR4c2z0REjIQuHw2ZcrPBXLCA0RHTezEdHjIQqkUhEr9I4HOILhQLf6/VoOUFEvDMiQiToDx1Cdz+bzZ6bUFarlel0OkkVUK/XWbvdPoVer5fh3ntsfwJ+CJ2XA4p0Op1bpBgJyxDehQQ6nQ5DZXHBYDBZq9V+EhFUndnr9drEqoc2bwJbwGPgtohuVSwWe2Gz2TZMJpNgRKi6qtUqg2EWj8dTgUDgo0KhWPN4PC70EvXOzs67fD6/S6kiRIKeZA1YJ2MiJNbdbvfTUCjkV6vVK2hcDF8GI2w0GrGTkxM2HA5PDxaLxSOfz/cWEfk81X0XIMMFgJJ/srBjCgk8IdcfuVyuZ36//7nFYtkQyAMumUzuRiKRD0jMFLa+AZOpYwqgB/ziBVqmVBKUO7eAB/R0WG/Z7XaTVqtdbTabHJL6EK2djBaBPHA0NSqpbUsiMUeEBgpF4Q5AbZrmSJ/yEWgBTaBNHl9kdkgmMUeG7qwAq9PqovceTA3zlxlgsuswyuXsGsiSxJLEkoSY/BZgAEjRodi+uBruAAAAAElFTkSuQmCC) no-repeat 100% 0;
+
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: snow;
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+
+.button:focus {
+    outline: none; /*FF*/
+}
+
+.button:active {
+    box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.25), /* highlight */ inset 0 0 6px #4481eb, /* inner glow */ inset 0 80px 80px -40px #04befe, /* gradient */ 0px 1px 0px rgba(255, 255, 255, 0.25); /* shadow */
+
+    -webkit-transition: 50ms ease-in-out;
+    -moz-transition: 50ms ease-in-out;
+    -o-transition: 50ms ease-in-out;
+    transition: 50ms ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+    .container-santa {
+        height: 300px;
+        width: 332px;
+        top: -200px;
+        left: 70%;
+    }
+
+
+}
