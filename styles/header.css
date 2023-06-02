@@ -13,9 +13,6 @@
     z-index: 0;
 }
 
-
-
-
 .header-main__logo img:hover {
     transform: rotate(360deg) !important;
 }
@@ -53,6 +50,7 @@
 }
 
 
+
 header {
     background: linear-gradient(-45deg, #56AFB3, #56AFB3, white, white);
 }
@@ -70,6 +68,9 @@ header {
 }
 
 @media screen and (max-width: 991px) {
+    .header-nav {
+        margin-top: 265px !important;
+    }
     .header-menu__hidden-button {
         display: block;
     }
